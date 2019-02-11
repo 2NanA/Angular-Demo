@@ -1,0 +1,148 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    <!-- Welcome to {{ title }}! -->
+  </h1>
+ <!--  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="> -->
+</div>
+
+<!-- <exe-gold></exe-gold> -->
+<!-- <event-test></event-test> -->
+
+<!-- <div>
+  <event-test (click)="quiClick($event)"></event-test>
+</div> -->
+<div>
+<!-- <observable-sfd> </observable-sfd>   -->
+
+
+
+    <div>
+      <!-- {{ads | json}} -->
+      <app-ad-banner [adsChild]="ads"></app-ad-banner>
+      }
+    </div>
+
+
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++  Input OutPut  +++++++++++++++++++++++++++++++++++++++++++++++++++++++   -->
+  <!-- <p>{{changeMsg}}</p>  -->
+  <!-- <p>Current parent value：{{ initialCount }}</p>  -->
+
+  <!-- 不指定output 别名 --> 
+  <!-- <event-test [count]="initialCount" (change)="childCountChange($event)"></event-test> -->
+
+  <!-- 指定别名 -->
+  <!-- <event-test [count]="initialCount" (countChange)="childCountChange($event)"></event-test> -->
+  
+
+  <!-- 单向绑定 触发@output countChange事件 视图到模型的事件绑定 -->
+  <!-- <event-test (countChange)="childCountChange($event)"></event-test> -->
+
+  <!-- 单向绑定 @input 属性绑定initialCount  模型到视图的数据绑定 -->
+  <!-- <event-test [count]="initialCount"></event-test> -->
+
+  <!-- 这是子组件的count 和 父组件 initialCount 之间的双向绑定
+  通过$event 获取到了EventEmitter 对象 emit的数据 -->
+  <!-- <event-test [count]="initialCount" (countChange)="initialCount = $event"></event-test> -->
+
+  <!-- [()]双向绑定 -->
+  <!-- <event-test [(count)]="initialCount" (checkedq)="showCheckedq($event)"></event-test> -->
+
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++  Input OutPut  +++++++++++++++++++++++++++++++++++++++++++++++++++++++   -->
+
+
+
+
+
+
+
+  <!-- rooter -->
+  <h3>
+    Angular Guide page
+  </h3>
+  <nav>
+    <ul>
+      <li>
+        <a [routerLink]="['/']">
+          Home
+        </a>
+      </li>
+
+      <li >
+        <!-- 传递exact: true表示路由完全匹配时才高亮 -->
+        <a routerLinkActive="active fb" [routerLinkActiveOptions]="{exact: true}"      [routerLink]="['/about']">
+          About
+        </a>
+      </li>
+
+      <li>
+        <!-- 默认搜索angular orgs -->
+        <!-- <a [routerLink]="['/github', 'angular']"> -->
+        <!-- <a [routerLink]="['/github', 'angular?lzka=123']">  wuxiao-->
+         <!-- 点击该链接的时候相当于带参数的第二步  -->
+
+        <!-- <a [routerLink]="['/github']"> -->
+        <a [routerLink]="['/github/angular']">
+          Github Repos
+        </a>
+      </li>
+
+      <li>
+        <a routerLink='/contact'>
+          Contact Us
+        </a>
+      </li>
+
+      <li>
+        <a routerLink='/observ'>
+          Observable Test
+        </a>
+      </li>
+
+
+      <!--routerLinkActive，表示路由激活的时候，启用active类样式-->
+      
+    </ul>
+  </nav>
+<!-- 
+                   <li ><a routerLink="home">首页</a></li>
+                   <li routerLinkActive="active"><a routerLink="contact">联系我们</a></li>
+                   <li routerLinkActive="active"><a routerLink="product">产品</a></li>
+                  -->
+  <!-- 导航过后，新的组件将会在这里展现 -->
+<main>
+  <router-outlet></router-outlet>
+</main>
+
+
+<footer>
+  © 2018 fLmt
+</footer>
+
+</div>
+
+<!-- <profile-card [cardprofile]='AppProfile'> </profile-card > -->
+
+
+   
+
+
+
+
+
+
+
+
+<!-- <h2>Here are some links to help you start: </h2>
+<ul>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
+  </li>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
+  </li>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
+  </li>
+</ul> -->
+

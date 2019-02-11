@@ -1,0 +1,14 @@
+<p>I'm parent {{ name1 }}</p>
+
+<exe-child prefix="You are my" [textSfd]="nameSfd"></exe-child>
+
+<!-- nameSfd是父组件的数据  textSfd 是子组件的input变量 
+
+Angular 正在匹配指令的输入属性的名字
+这个名字是指令的 inputs 数组中所列的名
+或者是带有 @Input() 装饰器的属性
+这些输入属性被映射为指令自己的属性。
+
+最常用的属性绑定是把元素属性设置为组件属性的值
+exe-child 元素的 textSfd 属性会被绑定到 当前组件模板的组件的 nameSfd 属性上：
+-->

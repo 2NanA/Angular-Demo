@@ -1,0 +1,51 @@
+<!-- 
+<div>enventer bind</div>
+<table style="border-collapse:collapse" border="1" width="10%">
+  <tr>
+    <td>One</td>
+    <td>Two</td>
+  </tr>
+  <tr>
+    <td [attr.colspan]="sizeNum" (click)="info(this)" >Bigger</td>
+  </tr>
+</table>
+
+<div (click)="info($event)">
+    <input type="button" value="button" />
+</div>
+
+<input type="text" value="word" (input)="info($event)"/> -->
+ <!-- 普通 事件绑定支持冒泡 -->
+
+
+<hr>
+
+<div>
+	<!-- 右边的函数名 赋值给左边 的时候 相当于 click.subscribe = quiClick('Button 1') -->
+	
+
+	
+
+
+	<!-- 组件自身内部 output 变量无效 -->
+<!--     <button (sfdClick)="quickClick($event, 'Sef Button 1')">Self Button 1</button>
+    <button (sfdClick)="quickClick($event, 'Sef Button 2')">Self Button 2</button> -->
+    <br>
+<!--     <button (click)="quiClick('Button 1')">Button 1</button>
+    <button (click)="quiClick('Button 2')">Button 2</button> -->
+
+           
+    <!-- <p>I'm not support bubbles</p> -->    
+<!--     <div> 
+    <h3> contain1 </h3>            
+    <div (click)="quiClick('contain1')" >  
+               
+      <button value="123">This is it</button>            
+    </div>        
+    </div>   -->
+
+    <br>
+    <p>Current Count: {{ count }}</p>
+    <button (click)="increment()"> + </button>
+    <button (click)="decrement()"> - </button>
+</div>

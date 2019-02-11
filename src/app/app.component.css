@@ -1,0 +1,11 @@
+p {
+	color: pink;
+}
+
+.active {
+	color: green;
+}
+
+.fb {
+	font-weight: bold;	
+}
